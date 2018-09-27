@@ -1,0 +1,134 @@
+THEME USAGE NOTES:
+
+
+
+THEME FEATURES: =============================================================================================
+
+• Responsive layout
+• Sticky nav bar with offset header
+• New touch-friendly responsive slideout Menu
+• Back-to-top prompt on scroll
+• Fancybox pop-up windows
+• Flexslider
+
+
+
+RESPONSIVE STRUCTURE: =================================================================================================
+
+• This Theme has been built based on the SKELETON Responsive framework, found here: http://www.getskeleton.com/
+• It is a completely bare-bones framework designed to be as lightweight as possible.
+• It is still a work-in-progress by Red Jelly but provides a simple to understand and easy-to-use base Wordpress Theme for custom web designs.
+• The responsive page structure is simple to use:
+
+    Start with a ".container" DIV, then nest within that an optional ".row" DIV, then within that any number of consecutive DIVs with classes from ".one" to ".sixteen", and either ".column" or ".columns".
+    For example:
+
+    •   <div class="container">
+          <div class="row">
+              <div class="ten columns">
+                <!-- content here -->
+              </div>
+              <div class="six columns">
+                <!-- content here -->
+              </div>
+          </div>
+        </div>
+
+    • NOTE: Where possible, make sure that the number of column DIVs in each ".row" or ".container" add up to 16.
+    • It is possible to offset each column using the class names found in "/styles/skeleton.css"
+    • You can also use ".one-third" and ".two-thirds" as class names to arrange accordingly.
+
+
+
+
+MENU USAGE: ======================================================================================================
+
+• Three MENU Theme Locations have been registered in "functions.php":
+    -> Sticky Menu (The sticky nav bar)
+    -> Main Menu (Can be set to appear anywhere)
+    -> Slide Menu (The responsive slide out menu)
+• To fire up the menus, go to Appearance->Menus and Create a new menu. Select which Theme location to display the menu in.
+• The Sticky menu is set in "header.php" and the Slide out menu is set in "footer.php"
+• Use the same "wp_nav_menu" function call to set the Main menu.
+
+
+
+
+FANCYBOX USAGE: ======================================================================================================
+
+• This Theme uses the awesomely easy Fancybox script found here: http://fancybox.net/
+• To use, create a div with an ID that will be lightboxed. Set the div's display to none.
+• Create a link with a class name and an href="#[lightboxme div]"
+• In the scripts file for own scripts (ie: scripts.js), add the following code:
+    $(".[name_of_link_class]").fancybox({
+      //API options here..
+    });
+
+
+FLEXSLIDER USAGE: =============================================================================================
+
+• This Theme uses Flexslider from Woothemes.
+• Full documentation can be found here: http://www.woothemes.com/FlexSlider/
+• "flexslider.css" is linked from header.php and is in "/styles/"
+• "jquery.flexslider.js" is enqueued in "functions.php"
+• To use the slider, simply create a new <div> with unique ID and the class name "flexslider" and within that, a <ul> with the class name "slides":
+
+      <div id="mySlider" class="flexslider">
+        <ul class="slides">
+
+          <?php
+            $mySlides = get_field('slides');
+
+            foreach ($mySlides as $mySlide) {
+              $markup  = '<li>';
+              $markup .= '<div>';
+              if ($mySlide[image]) {
+                $markup .= '<img src="'.$mySlide[image].'" />';
+              }
+              $markup .= '</div>';
+              $markup .= '<div>';
+              if ($mySlide[caption]) {
+                $markup .= $mySlide[caption];
+              }
+              $markup .= '</div>';
+              $markup .= '</li>';
+              echo $markup;
+            };
+          ?>
+
+        </ul>
+      </div>
+
+• Then in a script file (/js/my-scripts.js) initialise the slider:
+
+    $(window).load(function() {
+      $('#mySlider').flexslider();
+    });
+
+•
+
+NEW FEATURES: =============================================================================================
+
+• MMENU "Facebook" style slide in responsive menus
+
+
+
+
+*** ESSENTIAL PLUGINS: =============================================================================================
+
+- What The File
+- Advanced Custom Fields Pro (License Key: b3JkZXJfaWQ9MzgyODR8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE0LTA4LTI3IDAyOjQxOjEw)
+- Gravity Forms (License Key: 5c17d17c81d324d9a2bfb92529754a3c)
+- Custom Post Type UI
+- Bulkpress
+- Post Types Order
+- WP-Google-Maps
+- Google Analytics Dashboard for WP
+- Custom Widgets.php plugin
+
+
+
+
+*** TEMPLATE HIERARCHY FOR CUSTOM TAXONOMIES AND CUSTOM POST ARCHIVES: =============================================================================================
+
+

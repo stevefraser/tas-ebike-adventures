@@ -1,0 +1,22 @@
+/*
+* Blank Theme Editor CSS File
+*/
+
+.general_button,
+.general_button:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #444;
+  border-radius: 21px;
+  -webkit-border-radius: 21px;
+  -moz-border-radius: 21px;
+  border: 1px solid #444;
+  padding: 12px 19px;
+  transition: all 0.5s ease;
+  background: transparent;
+}
+.general_button:hover {
+  color: #cb8549;
+  border-color: #cb8549;
+}

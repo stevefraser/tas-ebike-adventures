@@ -1,0 +1,941 @@
+/*
+* TEA Theme Main CSS File
+*/
+
+/* Table of CSS Contents
+==================================================
+	#Site Styles
+	#Page Styles
+
+	#Font-Face
+
+*/
+
+
+/*
+GREEN: #acd228
+BROWN: #cb8549;
+*/
+
+
+/*  #Theme Pre-installed Styles ============================================================================= */
+
+
+.ease {
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+
+a {
+   /*-webkit-transition: all 0.1s ease-in-out;
+   -moz-transition: all 0.1s ease-in-out;
+   -o-transition: all 0.1s ease-in-out;
+   transition: all 0.1s ease-in-out;*/
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.searchIcon {
+  display: inline-block;
+  float: left;
+  padding: 1rem;
+  margin-top: 10px;
+}
+#preloader  {
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: #fefefe;
+     z-index: 99999999999;
+    height: 100%;
+    height: 100vh;
+    width: 100%;
+ }
+
+#status  {
+     width: 200px;
+     height: 200px;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     background-image: url(../img/ajax-loader-2.gif);
+     background-repeat: no-repeat;
+     background-position: center;
+     margin: -100px 0 0 -100px;
+     z-index: 9999999999999;
+ }
+.mobileLogo {
+  display: none;
+}
+iframe {
+  width: 100%;
+  height: auto;
+  min-height: 350px;
+}
+
+
+.vcentered-parent {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.vcentered-child {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#search_popup {
+  display: none;
+}
+.container.white {
+  background: #fff;
+}
+.header_spacer {
+  width: 100%;
+  height: 120px;
+}
+
+#fullWidthStickyNav .logo-menu {
+  display: inline-block;
+  float: left;
+  width: 160px;
+  padding-top: 0.8rem;
+}
+#floatingNav .logo-menu {
+  display: inline-block;
+  float: left;
+  width: 90px;
+}
+.book_now {
+  display: inline-block;
+  float: right;
+  /*height: 140px;*/
+  text-align: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.book_now a,
+.book_now a:visited {
+  display: block;
+  margin-top: 48px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -0.02rem;
+  font-size: 0.9rem;
+  background: #444;
+  font-weight: bold;
+  padding: 12px 15px;
+  /*border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;*/
+  line-height: 1rem;
+}
+.book_now a:hover {
+  background: #a2653e;
+}
+.scroll_more {
+  text-align: center;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  margin-left: -80px;
+  width: 160px;
+  z-index: 99;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+.hide_mobile {
+  display: block;
+  margin: 1rem auto;
+}
+.show_mobile {
+  display: none;
+  margin: 1rem auto;
+}
+
+
+.pageContent ul {
+  margin-left: 3rem;
+  list-style: disc inside;
+}
+.pageContent ul li {
+  list-style-position: inside;
+  text-indent: -2em;
+}
+
+input[type='submit']
+{
+   -webkit-appearance: none !IMPORTANT;
+   -moz-appearance: none !IMPORTANT;
+   appearance: none !IMPORTANT;
+}
+
+
+
+a.content-image:hover {
+  opacity: 0.8;
+  filter: alpha(opacity=0.8);
+}
+
+
+
+/* #Styleguide CSS Styles  ============================================================================= */
+
+.styleguide-page {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #FOOTER Styles  ============================================================================= */
+
+
+
+
+
+
+
+
+/* HOME PAGE STYLES  ============================================================================= */
+
+#section-home {
+  margin-bottom: 3rem;
+}
+.flexslider .previous {
+  width: 50px;
+  position: absolute;
+  top: 37%;
+  left: 0;
+  z-index: 999;
+}
+.flexslider .previous:hover {
+  opacity: 0.7;
+  filter: alpha(opacity=0.7);
+}
+.flexslider .next {
+  width: 50px;
+  position: absolute;
+  top: 37%;
+  right: 0;
+  z-index: 999;
+}
+.flexslider .next:hover {
+  opacity: 0.7;
+  filter: alpha(opacity=0.7);
+}
+#homeSlider .vcentered-parent {
+  height: 630px;
+}
+.section-hero .vcentered-parent {
+  height: 450px;
+}
+.section-hero h1 {
+  margin-bottom: 0;
+}
+a.testLink {
+  display: inline-block;
+  margin: 1rem;
+  padding: 1rem;
+  color: #fff;
+  background: #acd228;
+  text-transform: uppercase;
+}
+.slideBox {
+  background: #000;
+  background: rgba(0,0,0,0.5);
+  box-sizing: border-box;
+  padding: 2rem;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.slideBox h1 {
+  color: #fff;
+}
+.slideBox p {
+  color: #fff;
+  line-height: 1.4rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.slide_button {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  /*border-radius: 21px;
+  -webkit-border-radius: 21px;
+  -moz-border-radius: 21px;*/
+  border: 1px solid #fff;
+  padding: 12px 19px;
+  transition: all 0.5s ease;
+}
+.slideBox:hover .slide_button {
+  border-color: #cb8549;
+  color: #cb8549;
+}
+
+.general_button,
+.general_button:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #444;
+  /*border-radius: 21px;
+  -webkit-border-radius: 21px;
+  -moz-border-radius: 21px;*/
+  border: 1px solid #444;
+  padding: 12px 19px;
+  transition: all 0.5s ease;
+  background: transparent;
+}
+.general_button:hover {
+  color: #cb8549;
+  border-color: #cb8549;
+}
+
+.homepage.content h1,
+.homepage.content h2,
+.homepage.content h3 {
+  color: #acd228;
+  margin: 1rem 0;
+}
+.linkBox h4 {
+  margin: 1rem 0;
+}
+.linkBox a {
+  color: #444;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  display: block;
+  position: relative;
+  padding-left: 14px;
+  margin-bottom: 6px;
+}
+.linkBox a:before {
+  content: "\f054";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+/*--adjust as necessary--*/
+  color: #acd228;
+  font-size: 10px;
+  padding-right: 0.5em;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* GENERAL CSS  ============================================================================= */
+
+.container.white_bg {
+  box-sizing: border-box;
+  padding: 2rem;
+  background: #fff;
+  margin-bottom: 3rem;
+}
+.fullwidth.hero {
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+a.image_gallery {
+  width: 23%;
+  display: inline-block;
+  /*max-width: 200px;*/
+  float: left;
+  margin: 1%;
+  height: 180px;
+  opacity: 1;
+  filter: alpha(opacity=1);
+  transition: all 0.5s ease;
+  box-sizing: border-box;
+}
+a.image_gallery:hover {
+  opacity: 0.6;
+  filter: alpha(opacity=0.6);
+}
+.gallery_wrapper {
+  margin: 2rem 0;
+}
+
+
+
+
+
+
+
+
+/*
+TESTIMONIALS =====================================================================================
+*/
+#testimonial_footer h3 {
+  margin-bottom: 2rem;
+}
+.speech_mark {
+  float: left;
+  font-size: 5rem;
+  color: #c4c4c4;
+  margin-right: 2rem;
+  height: 150px;
+}
+.testimonial {
+  text-align: left;
+}
+.testimonial p {
+  margin-bottom: 5px;
+}
+#testimonial_footer .name {
+  text-align: left;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+/* BOOKING WIDGET IN SIDEBAR ============================================================================= */
+
+.right_border {
+  padding-right: 1rem;
+  box-sizing: border-box;
+  border-right: 1px solid #d8d8d8;
+  margin-bottom: 2rem;
+}
+.view_tab_wrapper {
+  margin-bottom: 7px;
+  box-sizing: border-box;
+  /*border-bottom: 1px solid #555;*/
+  font-family: Open-Sans-Light;
+  line-height: 24px;
+  font-size: 26px;
+  color: #666;
+  text-transform: uppercase;
+}
+.view_tab {
+  display: inline-block;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-size: 1rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+.view_tab.active {
+  color: #c60;
+  border: 1px solid #999;
+  /*border-bottom: 0;*/
+}
+.view.list {
+  display: none;
+  margin-top: 1rem;
+}
+
+#ajax-response {
+  margin-top: 1rem;
+}
+.view.calendar {
+  position: relative;
+  min-height: 260px;
+  border: 1px solid #555;
+}
+i.fa-info-circle {
+  vertical-align: bottom;
+  color: #999;
+  margin-right: 4px;
+}
+
+
+.bookingTab {
+  color: #444;
+  background: #e1e1e1;
+  padding: 8px 10px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  font-size: 0.95rem;
+  line-height: 1.3rem;
+  position: relative;
+}
+/*.bookingTab:hover {
+  color: #777;
+}*/
+.bookingTab:hover span.date {
+  color: #444;
+}
+/*.bookingTab.active {
+  background: #777;
+}*/
+.bookingTab.active span.date:after {
+  content: "\f00c";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  color: green;
+  font-size: 18px;
+  position: absolute;
+  top: 7px;
+  right: 12px;
+}
+.bookingTab span.date {
+  text-transform: uppercase;
+  color: #000;
+  display: inline-block;
+  font-size: 1rem;
+}
+.bookingTab span.soldout {
+  color: red;
+}
+.bookingTab span.nearlygone {
+  color: #cb8549;
+}
+.bookingTab .hiddenData,
+table.calendar td .hiddenData,
+.hiddenData {
+  display: none;
+}
+a.booknow-button,
+a.booknow-button:visited {
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #a2653e;
+  transition: all 0.5s ease;
+}
+a.booknow-button:hover {
+  background: #814722;
+}
+.table_calendar {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 3px;
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+  display: none;
+  position: absolute;
+}
+.table_calendar.visible {
+  display: table;
+}
+td.header {
+  height: 45px;
+  vertical-align: middle;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-family: Open-Sans-Light;
+}
+tr.row_top_days {
+  height: 32px;
+}
+tr.row_days td {
+  height: 30px;
+  vertical-align: middle;
+}
+tr.row_days td.hasTour {
+  background: #333;
+  color: #cd7d4a;
+  cursor: pointer;
+}
+tr.row_days td.hasTour:hover,
+tr.row_days td.hasTour.active {
+  background: #777;
+  color: #fff;
+}
+tr.row_days td.hasTour.soldout {
+  background: red;
+  color: #fff;
+}
+tr.row_days td.hasTour.nearlygone {
+  background: #cd7d4a;
+  color: #fff;
+}
+
+i.fa-cog {
+  margin-right: 0.5rem;
+}
+
+.next_month,
+.previous_month {
+  margin-top: 7px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+.styled-select {
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  width: 77px;
+  overflow: hidden;
+  background-color: #fff;
+  background: #fff;
+  position: relative;
+  margin-bottom: 1.5rem;
+  float: left;
+  margin-right: 1rem;
+}
+.styled-select:after {
+  top: 48%;
+    right: 15%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(0, 0, 0, 0);
+    border-top-color: #999;
+    border-width: 7px;
+    margin-top: -2px;
+    z-index: 100;
+}
+.styled-select select {
+  padding: 1rem;
+    width: 190% !IMPORTANT;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+            margin-bottom: 0;
+}
+.styled-select select:focus {
+  outline: none;
+}
+
+
+
+
+.step_wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+.step_heading {
+  background: #777;
+  color: #fff;
+  margin: 1rem 0;
+  cursor: pointer;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+  /*display: none;*/
+}
+.step_heading:hover {
+  background: #444;
+}
+.step_wrapper {
+  display: none;
+}
+.step_wrapper.one {
+  display: block;
+}
+
+#ajax_response {
+  margin-top: 1rem;
+  width: 95%;
+  text-align: center;
+  font-size: 1rem;
+}
+button.gotosteptwo {
+  display: none;
+}
+.ridersText {
+  line-height: 1rem;
+  padding-top: 8px;
+}
+
+#partner_footer {
+  padding: 3rem 0;
+  background: #f2f2f2;
+  margin-top: 3rem;
+}
+
+
+
+
+/* FAQ CSS  ============================================================================= */
+
+ul.faq-list > li {
+  border-bottom: 1px dashed #ccc;
+  margin-bottom: 1em;
+}
+ul.faq-list li ul {
+  margin-bottom: 1rem;
+}
+ul.faq-list li ul li {
+  list-style: disc inside;
+}
+ul.faq-list li ul li ul li {
+  text-indent: 2rem;
+}
+.question {
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  padding: 10px 15px;
+  background: #f4f4f4;
+}
+.question:hover,
+.question.down {
+  background: #cb8549;
+  color: #fff;
+}
+.answer {
+  display: none;
+  margin-bottom: 2rem;
+  padding: 10px 15px;
+}
+ul.faq-list {
+  list-style: none outside;
+}
+ul.faq-list li {
+  text-indent: 0;
+  padding-left: 0;
+}
+
+
+
+
+
+
+
+
+/*
+GENERAL PAGE CSS =================================================================================
+*/
+
+img.alignright {
+  float: right;
+  margin: 0 0 1rem 1rem;
+}
+img.alignleft {
+  float: left;
+  margin: 0 1rem 1rem 0;
+}
+
+a.sm_link {
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 2rem;
+}
+a.sm_link .fa {
+  font-size: 2rem;
+}
+span.hashtag {
+  display: inline-block;
+}
+
+
+
+.imageWrapper {
+  position: relative;
+}
+img.play {
+  cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -42px;
+    margin-top: -30px;
+    z-index: 99;
+}
+
+
+
+
+
+/* Gravity forms styling */
+label.gfield_label {
+  display: none !IMPORTANT;
+}
+li#field_3_5 label {
+  display: inline-block !IMPORTANT;
+}
+li#field_3_26 label {
+  display: inline-block !IMPORTANT;
+  float: left;
+  margin-top: 3px;
+  margin-right: 10px;
+}
+.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+  padding: 0.8rem 1rem !IMPORTANT;
+}
+input.gform_button {
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #a2653e;
+  transition: all 0.5s ease;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border: none;
+  cursor: pointer;
+}
+input.gform_button:hover {
+  background: #814722;
+}
+
+/* Gravity forms error handling */
+
+.gform_wrapper li.gfield.gfield_error,
+.gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+  background-color: transparent !IMPORTANT;
+  border: none !IMPORTANT;
+}
+.gform_wrapper .validation_message {
+  color: #f00 !IMPORTANT;
+}
+.validation_error {
+  display:none;
+}
+.gform_wrapper li.gfield_error input[type=email],
+.gform_wrapper li.gfield_error input[type=number],
+.gform_wrapper li.gfield_error input[type=password],
+.gform_wrapper li.gfield_error input[type=tel],
+.gform_wrapper li.gfield_error input[type=text],
+.gform_wrapper li.gfield_error input[type=url],
+.gform_wrapper li.gfield_error textarea {
+  border: 1px solid #f00 !IMPORTANT;
+}
+.gform_wrapper li.gfield.gfield_error.gfield_contains_required div.gfield_description,
+.gform_wrapper li.gfield.gfield_error.gfield_contains_required div.ginput_container,
+.gform_wrapper li.gfield.gfield_error.gfield_contains_required fieldset legend.gfield_label,
+.gform_wrapper li.gfield.gfield_error.gfield_contains_required label.gfield_label {
+  margin-left: 0 !IMPORTANT;
+}
+.gform_wrapper .validation_message:after {
+  content: "\f077";
+  font-family: "FontAwesome";
+  font-weight: 100;
+  margin-left: 0.5rem;
+}
+
+
+
+
+.page-template-custom-tour #ui-datepicker-div {
+  width: 274px !IMPORTANT;
+}
+
+#gform_wrapper_6  .top_label input.medium, 
+#gform_wrapper_6  .top_label select.medium {
+  width: 95% !IMPORTANT;
+}
+
+
+
+
+
+
+/* #Font-Face  ============================================================================= */
+
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+@font-face {
+  font-family: 'Open-Sans';
+  src: url('../fonts/OpenSans.eot');
+  src: url('../fonts/OpenSans.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/OpenSans.woff') format('woff'),
+       url('../fonts/OpenSans.ttf') format('truetype'),
+       url('../fonts/OpenSans.svg#OpenSans') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open-Sans-Light';
+  src: url('../fonts/OpenSans-Light.eot');
+  src: url('../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/OpenSans-Light.woff') format('woff'),
+       url('../fonts/OpenSans-Light.ttf') format('truetype'),
+       url('../fonts/OpenSans-Light.svg#OpenSans-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open-Sans-Bold';
+  src: url('../fonts/OpenSans-Bold.eot');
+  src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/OpenSans-Bold.woff') format('woff'),
+       url('../fonts/OpenSans-Bold.ttf') format('truetype'),
+       url('../fonts/OpenSans-Bold.svg#OpenSans-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNova-Light';
+  src: url('../fonts/ProximaNova-Light.eot');
+  src: local('☺'), url('../fonts/ProximaNova-Light.woff') format('woff'), url('../fonts/ProximaNova-Light.ttf') format('truetype'), url('../fonts/ProximaNova-Light.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* END CSS */

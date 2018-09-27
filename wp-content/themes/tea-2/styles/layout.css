@@ -1,0 +1,355 @@
+/*
+* Skeleton V1.2
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+    background-color: #fff;
+}
+
+a.secretLogin {
+	display: inline-block;
+	cursor: default;
+	text-decoration: none;
+}
+#secretLoginBox {
+	display: none;
+}
+
+#loginform-custom {
+	margin: 10% auto 0;
+	padding: 2em;
+	border: 1px solid #e3e3e3;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	max-width: 230px;
+}
+p.login-username input[type="text"],
+p.login-password input[type="password"] {
+	background-color: #fff !important;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+p.login-submit input[type="submit"] {
+	background-color: #fff !important;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	text-shadow: 0;
+	background: transparent;
+}
+
+/*** HEADER : STICKY NAV MENU ***/
+
+.stickyNav {
+	margin: 0 auto;
+	/*padding-right: 2rem;*/
+  float: right;
+  display: inline-block;
+  border-right: 1px solid #fff;
+  height: 140px;
+}
+.stickyNav img.logo-full {
+	height: 70px;
+	float: left;
+}
+.stickyMenu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	height: 70px;
+	/*overflow: hidden;*/
+  margin-top: 56px;
+}
+.stickyActive	{
+	background: #747272;
+}
+.stickyMenu li {
+	/*height: 70px;*/
+	display: inline-block;
+	position:relative;
+	z-index:500;
+	margin:0px 1px 0 1px;
+	color: #444;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+  float: left;
+}
+.stickyMenu li:hover {
+	color: #cb8549;
+}
+.stickyMenu li a {
+	display:block;
+	padding: 15px;
+	text-decoration:none;
+	text-align:center;
+	color:#fff;
+	font-size: 1em;
+	letter-spacing: -0.05em;
+	font-family: "ProximaNova-Light", sans-serif;
+	text-transform: uppercase;
+  font-weight: bold;
+}
+.stickyMenu li a:hover {
+	color: #cb8549;
+}
+.stickyMenu li ul li a:hover {
+	color: #cb8549;
+}
+.stickyMenu a.selected {
+	color: #cb8549;
+}
+.stickyMenu li.menu-item-has-children:after {
+	content: "\f078";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+/*--adjust as necessary--*/
+  color: #cb8549;
+  font-size: 18px;
+  padding-left: 0.5em;
+  position: absolute;
+  top: 23px;
+  right: 0;
+}
+
+
+
+/* newly added */
+.stickyMenu li.current_page_item > a { }
+.stickyMenu li.current_page_item > a::after {
+  content: " ";
+  position: absolute;
+   z-index: -1;
+   top: 5px;
+   left: 5px;
+   right: 5px;
+   bottom: 8px;
+   margin: 0 1em;
+  border-bottom: 2px solid #fff;
+}
+ul.sub-menu li.current_page_item > a::after {
+  border-bottom: none;
+}
+.stickyMenu a.selected    { color:#f00; }
+
+
+
+
+
+/* submenu, it's hidden by default */
+.stickyMenu ul {
+	position: absolute;
+	left: 0;
+	display: none;
+	list-style: none;
+	width: 120px;
+	background: #f6f6f6;
+	padding: 10px;
+	margin: 4px 0 0 0px;
+}
+.stickyMenu ul li {
+	float: none;
+	margin: 5px auto 0 auto;
+	width: 95%;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.stickyMenu ul li:hover 	{
+
+}
+/* display block will make the link fill the whole area of LI */
+.stickyMenu ul a {
+	display: block;
+	padding: 10px 5px;
+	color: #666;
+}
+.stickyMenu ul a:hover {
+	text-decoration: none;
+}
+
+/* fix ie6 small issue */
+*html .stickyMenu ul {
+	margin:0 0 0 -2px;
+}
+.admin-bar .floatingNav {
+    /*top: 28px;*/
+}
+/*ul.floatMenu {
+	text-align: center;
+	max-width: 960px;
+	margin: 0 auto;
+}
+ul.floatMenu li {
+	float: left;
+	margin-left: 15px;
+}
+ul.floatMenu li a {
+	text-decoration: none;
+	color: #fff;
+}*/
+a.backtotop	{
+	display: none;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	position: expression("absolute");
+	bottom: expression(eval(document.body.scrollTop)+(eval(document.body.height)-10));
+	background-color: #333;
+	color: #fff;
+	-moz-border-radius: 200px;
+	-webkit-border-radius: 200px;
+	border-radius: 200px;
+	/*-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+	box-shadow: 0 0 10px rgba(0,0,0,0.4);*/
+	padding: 12px 12px 11px 12px;
+	background: #000 url(../img/goup.png) 12px 14px no-repeat;
+	width: 28px;
+	height: 30px;
+}
+.wrapHeader {
+	padding-top: 10px;
+	height: 140px;
+}
+#fullWidthStickyNav	{
+	width: 100%;
+	text-align: center;
+	z-index: 8000;
+	/*overflow: visible;*/
+  overflow: hidden;
+	position: relative;
+  position: absolute;
+  top: 0;
+  border-bottom: 1px solid #fff;
+  box-sizing: border-box;
+  padding: 1rem;
+  padding-top: 0;
+  height: 140px;
+  background: #000;
+  background: rgba(0,0,0,0.4);
+}
+#fullWidthStickyNav .container {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+#fullWidthStickyNav .container .row {
+	margin-bottom: 0;
+}
+#fullWidthStickyNav.sticky {
+	margin: 0;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+}
+
+
+#floatingNav {
+  display: none;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  text-align: center;
+  z-index: 8000;
+  /*overflow: visible;*/
+  overflow: hidden;
+  top: 0;
+  border-bottom: 1px solid #fff;
+  box-sizing: border-box;
+  padding: 1rem;
+  height: 90px;
+  background: #000;
+  background: rgba(0,0,0,0.9);
+}
+.floatingNav {
+    background-color: #333;
+    border-bottom: 1px solid #111;
+    border-top: 1px solid #111;
+    clear: both;
+    display: none;
+    position: fixed;
+    top: 20px;
+    width: 100%;
+    z-index: 999;
+    padding: 12px 0;
+}
+
+
+.fixed {
+	position:fixed !important;
+}
+.fullWidthHeader {
+	width: 100%;
+	text-align: center;
+	padding-bottom: 2em;
+}
+#fullWidthFooter {
+	width: 100%;
+  text-align: center;
+  padding-top: 2em;
+  background: #000;
+  color: #fff;
+  padding: 3rem 0;
+}
+
+
+
+.stickyMenu li.search {
+	text-indent: -9999px;
+}
+.stickyMenu li.search a {
+	background: url('../img/search.png') no-repeat;
+	background-position-y: 25px;
+}
+.stickyMenu li.search a:hover {
+	background: url('../img/search-hover.png') no-repeat;
+	background-position-y: 25px;
+}
+
+
+#topMenu {
+	background: #111;
+  height: 30px;
+  overflow: hidden;
+}
+ul.adminMenu li {
+	display: inline-block;
+}
+#topMenu span {
+	display: inline-block;
+}
+ul.adminMenu li a {
+	color: #888;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-right: 1rem;
+}
+ul.adminMenu li a:hover {
+	color: #ddd;
+}
+#topMenu .inline {
+	display: inline-block;
+	color: #888;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-right: 1rem;
+}
+.menu-top-admin-menu-container {
+	display: inline-block;
+}

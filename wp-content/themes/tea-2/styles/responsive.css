@@ -1,0 +1,176 @@
+
+/* #MEDIA QUERIES  ============================================================================= */
+
+
+
+/* Min width 768px (devices and browsers) */
+@media only screen and (max-width: 1059px) {
+	li.drop1059 {
+		display: none;
+	}
+}
+
+
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+	.stickyMenu li a {
+		padding: 15px 9px;
+	}
+	#fullWidthStickyNav .logo-menu {
+		width: 130px;
+    margin-top: 10px;
+	}
+	.book_now a {
+		margin-top: 36px;
+		width: 65px;
+	}
+}
+
+/* Min width 768px (devices and browsers) */
+@media only screen and (max-width: 850px) {
+	li.drop850 {
+		display: none;
+	}
+}
+
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.case_study .left_side {
+	  width: 50%;
+	}
+	.case_study .right_side {
+	  width: 50%;
+	}
+}
+
+
+
+/* Min width 768px (devices and browsers) */
+@media only screen and (min-width: 768px) {
+
+}
+
+
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	.navSearchIcon.desktop,
+	.navDivider {
+	  display: none;
+	}
+	.navSearchIcon.mobile {
+	  display: block;
+	}
+	.stickyMenu {
+		display: none;
+	}
+	.mobileLogo {
+	  display: block;
+	}
+	.flexslider .next, .flexslider .previous {
+		display: none;
+	}
+	h1 {
+		line-height: 32px !IMPORTANT;
+    font-size: 36px !IMPORTANT;
+	}
+	.linkBox {
+		margin-bottom: 3rem !IMPORTANT;
+	}
+	.case_study .left_side {
+	  width: 100%;
+	}
+	.case_study .right_side {
+	  width: 100%;
+		margin-bottom: 3rem;
+	}
+	.homepage.event {
+		margin-bottom: 3rem;
+	}
+	.hide_mobile {
+	  display: none;
+	}
+	.show_mobile {
+	  display: block;
+	}
+	img.alignright {
+	  float: none;
+	  margin: 1rem 0;
+	  width: 100%;
+	}
+	img.alignleft {
+	  float: none;
+	  margin: 1rem 0;
+	  width: 100%;
+	}
+	a.image_gallery {
+		width: 31%;
+		height: 150px;
+	}
+	.speech_mark {
+		height: 200px;
+	}
+
+}
+
+
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+
+	#fullWidthStickyNav {
+		height: 100px;
+	}
+	#fullWidthStickyNav .logo-menu {
+		width: 100px;
+    padding-top: 0;
+	}
+	#floatingNav .logo-menu {
+		margin-top: 0;
+	}
+	.lines_two {
+		margin-top: 37px;
+	}
+	.book_now a {
+		margin-top: 13px;
+		font-size: 0.8rem;
+		padding: 7px 10px;
+	}
+	.book_now {
+		padding-right: 0;
+	}
+	.fullwidth.hero {
+		height: auto !IMPORTANT;
+	}
+	.vcentered-parent {
+		height: auto !IMPORTANT;
+	}
+	.vcentered-child {
+		top: auto;
+		transform: none;
+		margin: 150px auto;
+	}
+	#floatingNav .lines_two {
+		margin-top: 19px;
+	}
+	.view_tab {
+		padding: 9px;
+		font-size: 1.1rem;
+	}
+	a.image_gallery {
+		width: 48%;
+		height: 150px;
+	}
+	.speech_mark {
+		display: none;
+	}
+
+
+}
